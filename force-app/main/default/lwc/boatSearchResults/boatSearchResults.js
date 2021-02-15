@@ -5,6 +5,7 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { refreshApex } from '@salesforce/apex';
 import { publish, MessageContext } from 'lightning/messageService';
 import BOATMC from '@salesforce/messageChannel/BoatMessageChannel__c';
+import updateBoatList from '@salesforce/apex/BoatDataService.updateBoatList';
 
 const LOADING_EVENT = 'loading';
 const DONE_LOADING_EVENT = 'doneloading';
